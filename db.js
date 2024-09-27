@@ -7,6 +7,7 @@ const pool = new Pool({
     port: 5432, // default Postgres port
     database: 'ddtrack'
 });
+
 module.exports = {
     query: (text, params) => pool.query(text, params)
 };
